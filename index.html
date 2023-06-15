@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Weather API</title>
+    </head>
+    <body>
+        <div id="onLoad">
+            <img src="images/logo@2x.png" alt="website logo">
+            <h3 class="text-white">Weather</h3>
+        </div>
+        <div>
+            <video autoplay muted loop class="backgroundVideo" id="hot" src=""></video>
+            <video autoplay muted loop class="backgroundVideo" id="clouds" src=""></video>
+            <video autoplay muted loop class="backgroundVideo" id="wind" src=""></video>
+            <video autoplay muted loop class="backgroundVideo" id="rain" src=""></video>
+            <video autoplay muted loop class="backgroundVideo" id="sunny" src=""></video> 
+            <video autoplay muted loop class="backgroundVideo" id="snow" src=""></video>
+            <video autoplay muted loop class="backgroundVideo" id="winter" src=""></video>
+        </div>
+       
+
+        <nav class="navbar navbar-expand-lg navbar-dark  ">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo@2x.png" alt="" width="50" height="30" class="d-inline-block align-text-top me-2">
+                    Weather
+                </a>
+
+                <div class="position-relative w-25">
+                    <input id="searchBar" class="form-control rounded-pill bg-white my-2" type="text" placeholder="Find your location...">
+                    <button type="button" class="exclamtionMark btn d-none" data-bs-container="body" data-bs-toggle="popover"  data-bs-trigger="hover" data-bs-placement="bottom" >
+                        <i class="fas fa-exclamation fs-4 text-danger"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="weatherDivs row m-auto "></div>
+
+
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
